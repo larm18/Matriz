@@ -54,7 +54,7 @@ public class Arturo {
                 int aprobado = 0;
                 int reprobado = 0;
                 int extra = 0;
-                for (int i=0;i<=n;i++)
+                for (int i=0;i<=9;i++)
             {
                 cali[i] =(int)(rnd.nextDouble()*100); 
                 System.out.print(" "+cali[i]);
