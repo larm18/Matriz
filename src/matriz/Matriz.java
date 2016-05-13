@@ -36,6 +36,7 @@ public class Matriz {
         a1.VectorRandom();
         System.out.println("Ejercicio 2:");
         a1.AlumnosCalificaciones();
+        leer.next();
         
         System.out.println("Carlos :");
         System.out.println("Ejercicio 1:");
@@ -43,10 +44,11 @@ public class Matriz {
         
         System.out.println("Marcelino :");
         System.out.println("Ejercicio 1: ");
+        Marcelino m1 = new Marcelino();
+        m1.Ejercicio1();
         System.out.println("Ejercicio 2:");
-        //Marcelino m1 = new Marcelino();
-        //m1.Ejercicio1();
-        //leer.next();
+        m1.Ejercicio2();
+        leer.next();
         
         System.out.println("Oscar :");
         System.out.println("Ejercicio 1:");
