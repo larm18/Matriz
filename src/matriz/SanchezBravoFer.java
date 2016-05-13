@@ -56,9 +56,6 @@ public class SanchezBravoFer {
         for(int i=0;i<=9;i++)
         {
             
-      
-      
-      
       }
     }
 }
