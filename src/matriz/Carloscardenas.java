@@ -52,4 +52,33 @@ public class Carloscardenas {
     
     }
     
+    public static void ejerciocio2(){
+        
+                int [] calificacion = new int [10];
+                Random rng = new Random();
+                int A = 0;int R = 0;int E = 0;
+
+                for (int i=0;i<=9;i++){
+                    
+                calificacion[i] =(int)(rng.nextDouble()*100); 
+             
+                if (calificacion[i]>=70)
+                {
+                    A++;
+                }
+                if(calificacion[i]<70 && calificacion[i]>=5)
+                {
+                    F++;
+                }
+                else
+                {
+                   E++; 
+                }
+                
+                }
+              System.out.println("La cantidad de alumnos que aprobaron es: "+A);    
+              System.out.println("La cantidad de alumnos que tienen derecho a extra es: "+F);    
+              System.out.println("La cantidad de alumnos que reprobaron es: "+E);
+    }
+    
 }
