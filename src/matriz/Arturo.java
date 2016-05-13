@@ -21,7 +21,7 @@ public class Arturo {
         System.out.println("De cuantas posiciones quieres el vector?");
         int n = leer.nextInt();  
         int [] vector = new int [n];
-        for (int i=0;i<=n;i++)
+        for (int i=0;i<=n-1;i++)
             {
                Random rnd = new Random();
             vector[i] =(int)(rnd.nextDouble()*10+1); 
