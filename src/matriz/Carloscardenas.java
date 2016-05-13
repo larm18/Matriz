@@ -56,7 +56,7 @@ public class Carloscardenas {
         
                 int [] calificacion = new int [10];
                 Random rng = new Random();
-                int A = 0;int R = 0;int E = 0;
+                int A = 0;int D = 0;int R = 0;
 
                 for (int i=0;i<=9;i++){
                     
@@ -68,17 +68,17 @@ public class Carloscardenas {
                 }
                 if(calificacion[i]<70 && calificacion[i]>=5)
                 {
-                    F++;
+                    D++;
                 }
                 else
                 {
-                   E++; 
+                   R++; 
                 }
                 
                 }
               System.out.println("La cantidad de alumnos que aprobaron es: "+A);    
-              System.out.println("La cantidad de alumnos que tienen derecho a extra es: "+F);    
-              System.out.println("La cantidad de alumnos que reprobaron es: "+E);
+              System.out.println("La cantidad de alumnos que tienen derecho a extra es: "+D);    
+              System.out.println("La cantidad de alumnos que reprobaron es: "+R);
     }
     
 }
