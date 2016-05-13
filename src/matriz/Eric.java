@@ -17,8 +17,8 @@ import java.util.Scanner;
 public class Eric {
     public static int numero=0;
     public Eric(){
-        datos();
-        calificacion();
+        out.println(datos());
+        out.println(calificacion());
     }
     public static int datos(){
         out.println("dame el numero");
@@ -54,9 +54,11 @@ public class Eric {
    }
    public static String calificacion(){
        int[] matris=new int[10];
-       for (int i = 0; i < numero; i++) {
+       String dato2="";
+       for (int i = 0; i < 10; i++) {
             Random n=new Random();
             matris[i]=(int)(n.nextInt(100)+1);
+            dato2=""+matris[i];
        } 
        String dato=Calificacion(matris);
        return dato;
