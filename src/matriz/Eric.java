@@ -20,15 +20,17 @@ public class Eric {
         out.println(datos());
         out.println(calificacion());
     }
-    public static int datos(){
+    public static String datos(){
         out.println("dame el numero");
         Scanner leer= new Scanner(in);
         int numero= leer.nextInt();
         int valor=0;
+        String numerosos="";
         int[] matris= new int[numero];
         for (int i = 0; i < numero; i++) {
             Random n=new Random();
             matris[i]=(int)(n.nextInt(10)+1);
+            numerosos+=" "+matris[i];
         }
         if (numero%2==0) {
             valor=suma(matris,numero);
@@ -36,7 +38,7 @@ public class Eric {
         if (numero%2!=0) {
             valor=multiplicacion(matris,numero);
         }
-        return valor;
+        return ""+valor+" los numeros: "+numerosos;
     }
    public static int suma(int[] numero,int numeros){
        int valorSuma=0;
@@ -58,10 +60,10 @@ public class Eric {
        for (int i = 0; i < 10; i++) {
             Random n=new Random();
             matris[i]=(int)(n.nextInt(100)+1);
-            dato2=""+matris[i];
+            dato2+=" las calificaciones: "+matris[i];
        } 
        String dato=Calificacion(matris);
-       return dato;
+       return dato + " "+dato2;
    }
     public static String Calificacion(int[] matris){
         int aprobados=0;
