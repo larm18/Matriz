@@ -21,6 +21,7 @@ public class Oscar {
         
         for(int i = 0; i < n; i++){
             v[i] = numero.nextInt(9)+1;
+            System.out.println(v[i]);
         }
         
         if(flag == 0 ){
