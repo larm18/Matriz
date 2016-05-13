@@ -7,6 +7,7 @@
 package matriz;
 import java.util.Scanner;
 import java.util.Random;
+import static java.lang.System.out;
 /**
  *
  * @author fernando
@@ -24,10 +25,10 @@ public class SanchezBravoFer {
         Fill= random.nextInt(10)+1;
         
         
-        int[] Vector = new int[rnd];
+        int[] array = new int[rnd];
         
         for (int i = 0; i < rnd; i++) {
-            Vector[i] = Fill;
+            array[i] = Fill;
         }
         
          int suma= 0;
@@ -36,26 +37,50 @@ public class SanchezBravoFer {
         if (rnd % 2 == 0)
         {
             for (int j = 0; j < rnd; j++) {
-               suma+= suma + Vector[j]; 
-               System.out.println(suma);
+               suma+= suma + array[j]; 
+               out.println(suma);
             }
         
         }
         else{
             for (int e = 0; e < rnd; e++) {
-                multiplica+= multiplica * Vector[e];
-                System.out.println(multiplica);
+                multiplica+= multiplica * array[e];
+                out.println(multiplica);
             }
         }  
 }
     public static void Ejercicio2()
-    {
-     
-      int[] Vector = new int[10];
-      Random random = new Random();
-        for(int i=0;i<=9;i++)
-        {
+    {       
+        Random random2 = new Random();
+        int notas = 0;
+        int[] array2 = new int[10];
+        String[] Al = new String[10];        
+        for (int i = 0; i < 10; i++) {
+            notas = random2.nextInt(100)+1;
+            array2[i] = notas;
+        }
+        
+        for (int j = 0; j < 10; j++) {
             
-      }
+            if(array2[j] >= 50 && array2[j] < 70)
+            {
+               Al[j] = "Derecho a examen extraordinario. ";
+            }
+            
+            else if(array2[j] < 50)
+            {
+                Al[j] = "Reprobado";
+            }
+            
+            else if(array2[j] >= 70)
+            {
+                Al[j] = "Aprobado";
+            }
+        }
+        
+        for (int e = 0; e < 10; e++) {
+            out.print(array2[e] + " ");
+            out.println(Al[e]);  
+        }
     }
-}
+    }
