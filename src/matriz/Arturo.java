@@ -30,7 +30,7 @@ public class Arturo {
         if (n%2==0)
         {
             int suma = vector [0];
-             for (int j=1;j<=n;j++)
+             for (int j=1;j<n;j++)
             {
                 suma=suma+vector[j];
             }
