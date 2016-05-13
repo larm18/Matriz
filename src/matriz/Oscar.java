@@ -30,7 +30,9 @@ public class Oscar {
         }
         
         else{
+            resultado = 1;
             for(int i = 0; i < n;i++){
+                
                 resultado = resultado * v[i];
             }
         }
@@ -40,25 +42,29 @@ public class Oscar {
     
     public static void dos(){
         Random n = new Random();
-        int[] v = new int[9];
+        int[] v = new int[10];
         int apro = 0;
         int der = 0;
         int rep = 0;
         
-        for(int i = 0; i < 9; i++){
+        for(int i = 0; i < 10; i++){
             v[i] = n.nextInt(9)+1;
         }
         
-        for(int i =0; i<9;i++){
-            if(v[i] >= 70){
+        for(int i =0; i<10;i++){
+            if(v[i] >= 7){
                apro++; 
             }
-            else if(v[i] < 70 && v[i]>=50){
+            else if(v[i] < 7 && v[i]>=5){
                 der++;
             }
-            else if(v[i] < 50 ){
+            else if(v[i] < 5 ){
                 rep++;
             }
+        }
+        
+        for(int i = 0; i< 10;i++){
+            System.out.println(v[i]);
         }
         System.out.println("Cantidad de Aprobados: "+apro);
         System.out.println("Cantidad que tienen derecho a extra: "+der);
