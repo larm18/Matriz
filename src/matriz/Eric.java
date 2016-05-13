@@ -50,7 +50,7 @@ public class Eric {
    public static int multiplicacion(int[] numero,int numeros){
        int valorMultiplicacion=1;
        for (int i = 0; i < numeros; i++) {
-           valorMultiplicacion+=valorMultiplicacion*numero[i];
+           valorMultiplicacion=valorMultiplicacion*numero[i];
        }    
        return valorMultiplicacion;
    }
