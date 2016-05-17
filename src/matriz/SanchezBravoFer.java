@@ -83,4 +83,70 @@ public class SanchezBravoFer {
             out.println(Al[e]);  
         }
     }
+    
+    public static void Ejercicio3()
+    {
+
+        int [][] matriz = new int[5][5];
+        
+       
+       int resultado=0;
+       
+       for  (int x=0; x < matriz.length; x++) 
+       {
+         for (int y=0; y < matriz[x].length; y++)
+         {
+            matriz[x][y] = (int) (Math.random()*10+1);
+            resultado=resultado+matriz[x][y];
+            if(resultado>=70){
+            System.out.println("la posicion de la matriz es:"+ matriz[x][y]);
+            
+            System.exit(0);
+          }
+      
+        
+         }
+       }
+    }   
+    
+    public static void Ejercicio4()
+    {
+    int [][] matriz = new int[5][5];
+       
+       int resultado=1;
+       int sumf;
+       int sumc;
+       
+       for(int x=0; x < matriz.length; x++) 
+       {
+         for (int y=0; y < matriz[x].length; y++)
+         {
+            matriz[x][y] = (int) (Math.random()*9+1);
+ 
+          }
+         for (int i = 0; i < matriz.length; i++) {  
+                  sumf=0;  
+                  for (int j = 0; j < matriz[i].length; j++) {  
+                   sumf=sumf+matriz[i][j];  
+                  }  
+                  
+                 System.out.println("La suma de los valores de la fila "+(i+1)+" es:      "+sumf);
+
+                                                } 
+         
+          for (int i = 0; i < matriz[0].length; i++) 
+          {  
+                sumc=0;  
+                for (int j = 0; j < matriz.length; j++)
+                {  
+                  sumc=sumc+matriz[j][i];  
+                }  
+                System.out.println("La suma de los valores de la columna "+(i+1)+" es: "+sumc);  
+            }  
+       
+       }
+    
     }
+    
+    
+}
