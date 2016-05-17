@@ -100,5 +100,161 @@ public class Arturo
                 }
                 System.out.println("("+cordenada[0]+","+cordenada[1]+") la suma es:"+suma); 
         }
+     public static void Ejer4()
+        {
+         Scanner leer = new Scanner(System.in);   
+             System.out.println("Introduce n:");
+        int n = leer.nextInt();  
+                     System.out.println("Introduce m");
+        int m = leer.nextInt();  
+        
+                int [][] matriz = new int [n+1][m+1];
+                Random rnd = new Random();
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<m;j++)
+                    {                
+                        matriz[i][j] =(int)(rnd.nextDouble()*10); 
+                        matriz [n][j]=matriz [n][j]+matriz[i][j];
+                        matriz [i][m]=matriz [i][m]+matriz[i][j] ;      
+                    }
+                }
+                 for (int i=0;i<n+1;i++)
+                {
+                    System.out.println("  "); 
+                    for (int j=0;j<m+1;j++)
+                    {                
+                       System.out.print(matriz[i][j]+"  ");  
+                    }
+                }
+             
+        }    
+      public static void Ejer5()
+        {
+         Scanner leer = new Scanner(System.in);   
+             System.out.println("Introduce n:");
+        int n = leer.nextInt();  
+                     System.out.println("Introduce m");
+        int m = leer.nextInt();  
+        
+                int [][] matriza = new int [n][m];
+                int [][] matrizb = new int [n][m];
+                int [][] matrizc = new int [n][m];
                 
+                Random rnd = new Random();
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<m;j++)
+                    {                
+                        matriza[i][j] =(int)(rnd.nextDouble()*10); 
+                        matrizb[i][j] =(int)(rnd.nextDouble()*10); 
+                        matrizc[i][j] = matriza[i][j]*matrizb[i][j];
+                    }
+                }
+                 System.out.println("  ");  System.out.println("  "); 
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println("  "); 
+                    for (int j=0;j<m;j++)
+                    {                
+                       System.out.print(matriza[i][j]+"  ");  
+                    }
+                }
+                 System.out.println("  ");   System.out.println("  "); 
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println("  "); 
+                    for (int j=0;j<m;j++)
+                    {                
+                       System.out.print(matrizb[i][j]+"  ");  
+                    }
+                }
+                  System.out.println("  ");   System.out.println("  "); 
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println("  "); 
+                    for (int j=0;j<m;j++)
+                    {                
+                       System.out.print(matrizc[i][j]+"  ");  
+                    }
+                }
+        }
+      
+     public static void Ejer6()
+        {
+        
+                int n=4;
+                int m=5;
+                int [] maximo = new int [3];
+                int [][] matriz = new int [n][m];
+                Random rnd = new Random();
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<m;j++)
+                    {                
+                        matriz[i][j] =(int)(rnd.nextDouble()*10); 
+                        if (matriz[i][j]>maximo[0])
+                        {
+                            maximo[0]=matriz[i][j];
+                            maximo[1]=i+1;
+                            maximo[2]=j+1;
+                        }
+                    }
+                }
+                 for (int i=0;i<n;i++)
+                {
+                    System.out.println("  "); 
+                    for (int j=0;j<m;j++)
+                    {                
+                       System.out.print(matriz[i][j]+"  ");  
+                    }
+                }
+                 System.out.println("El numero mas grande es:"+ maximo[0]+" con cordenadas ("+ maximo[1]+","+maximo[2]+")"); 
+        }    
+             
+     
+               
+     public static void Ejer7()
+        {
+        
+                int n=3;
+                int m=5;
+                int [][] matriz = new int [n][m];
+                Random rnd = new Random();
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<m;j++)
+                    {                
+                        matriz[i][j] =(int)(rnd.nextDouble()*10); 
+                        System.out.print(matriz[i][j]+"  ");
+                    }
+                }
+                System.out.println(""); 
+                System.out.println("Por Columna"); 
+                
+                 for (int i=0;i<n;i++)
+                {
+                    for (int j=0;j<m;j++)
+                    {                
+                       System.out.print(matriz[i][j]+"  ");  
+                    }
+                }
+                System.out.println(""); 
+                System.out.println("Por Renglon"); 
+                for (int j=0;j<m;j++)
+                {
+                    for (int i=0;i<n;i++)
+                    {                
+                       System.out.print(matriz[i][j]+"  ");  
+                    }
+                }
+        }    
+                 
+          
+     
+     
 }
