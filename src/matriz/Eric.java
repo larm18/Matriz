@@ -19,6 +19,13 @@ public class Eric {
     public Eric(){
         out.println(datos());
         out.println(calificacion());
+        Matris();
+        nm();
+        doblematris();
+        matrisrandom();
+        imprencionmatris();
+        matris8();
+        matrisgrande();
     }
     public static String datos(){
         out.println("dame el numero");
@@ -81,5 +88,187 @@ public class Eric {
             }
         }
         return "aprobaron: "+aprobados+" derecho: "+derecho+" reprobados "+reprobados;
+    }
+    public static void Matris(){
+        int[][] matris=new int[5][5];
+        int numero8=0;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                Random n=new Random();
+                matris[i][j]=(int)(n.nextInt(10)+1);
+                out.print(matris[i][j]+",");
+            }
+            out.println();
+        }
+        String posicion="";
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                 numero8+=matris[i][j];
+                if (numero8>=70) {
+                    
+                    posicion=numero8+" pisicion "+i+" "+j;
+                    break;
+                }
+            }
+        }
+        out.println( posicion);
+    }
+    public static void nm(){
+        out.println("dame el numero");
+        Scanner leer= new Scanner(in);
+        int n= leer.nextInt();
+        out.println("dame el numero");
+        int m= leer.nextInt();
+        int[][] matris2=new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                Random z=new Random();
+                matris2[i][j]=(int)(z.nextInt(10)+1);
+                out.print(matris2[i][j]+",");
+            }
+            out.println();
+        }
+        int numero5=0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {   
+                numero5+=matris2[i][j];
+            }
+            out.print("renglon "+numero5);
+            out.println();
+            numero5=0;
+        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {   
+                numero5+=matris2[j][i];
+            }
+            out.print("columna "+numero5);
+            out.println();
+            numero5=0;
+        }
+    }
+    public static void doblematris(){
+        out.println("dame el numero");
+        Scanner leer= new Scanner(in);
+        int n= leer.nextInt();
+        out.println("dame el numero");
+        int m= leer.nextInt();
+        int[][] matris1=new int[n][m];
+        int[][] matris2=new int[n][m];
+        int[][] matris3=new int[n][m];
+        out.println("primera matris");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                Random z=new Random();
+                matris2[i][j]=(int)(z.nextInt(10)+1);
+                out.print(matris2[i][j]+",");
+            }
+            out.println();
+        }
+        out.println("segunda matris");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                Random z=new Random();
+                matris1[i][j]=(int)(z.nextInt(10)+1);
+                out.print(matris1[i][j]+",");
+            }
+            out.println();
+        }
+        out.println("matris multiplicada");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matris3[i][j]=matris1[i][j]*matris2[i][j];
+                out.print(matris3[i][j]+",");
+            }
+            out.println();
+        }
+    }
+    public static void matrisrandom(){
+        int[][] matris=new int[4][5];
+        out.println("matris random");
+        int numero=0;
+        String posicion="";
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 5; j++) {
+                Random z=new Random();
+                matris[i][j]=(int)(z.nextInt(10)+1);
+                numero=matris[i][j];
+                out.print(matris[i][j]+",");
+            }
+            out.println();
+        }
+        numero=matris[0][0];
+        posicion=""+0+" "+0;
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (numero<matris[i][j]) {
+                    numero=matris[i][j];
+                    posicion=""+i+" "+j;
+                }
+            }
+        }
+        out.println(posicion);
+    }
+    public static void  imprencionmatris(){
+        int[][] matris=new int[3][5];
+        out.println();
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 5; j++) {
+                Random z=new Random();
+                matris[i][j]=(int)(z.nextInt(10)+1);
+                out.print(matris[i][j]+",");
+            }
+            out.println();
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 5 ;j++) {   
+               out.print("F: "+matris[i][j]+",");
+            }
+        }
+        out.println();
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 3; j++) {   
+               out.print("C: "+matris[j][i]+",");
+            }
+        }
+    }
+    public static void matris8(){
+    int[][] matris=new int[5][6];
+        out.println();
+        out.println();
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 6; j++) {
+                matris[i][j]=i+j;
+                out.print(matris[i][j]+",");
+            }
+            out.println();
+        }
+    }
+    public static void matrisgrande(){
+        out.println("dame el numero");
+        Scanner leer= new Scanner(in);
+        int n= leer.nextInt();
+        out.println("dame el numero");
+        int m= leer.nextInt();
+        int[][] matris=new int[n][m];
+        out.println("primera matris");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                Random z=new Random();
+                matris[i][j]=(int)(z.nextInt(10)+1);
+                out.print(matris[i][j]+",");
+            }
+            out.println();
+        }
+        int[]numero=new int[n];
+        int numero2=0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                numero[i]+=matris[j][i];
+                if (numero[numero2]<numero[i]) {
+                    numero2=i;   
+                }
+            }
+        }
+        out.println(numero2+" valor columna: "+numero[numero2]);
     }
 }
