@@ -255,6 +255,56 @@ public class Arturo
         }    
                  
           
+     public static void Ejer8()
+        {
+        
+                int n=5;
+                int m=6;
+                int [][] matriz = new int [n][m];
+                Random rnd = new Random();
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<m;j++)
+                    {                
+                        matriz[i][j] =i+j; 
+                        System.out.print(matriz[i][j]+"  ");
+                    }
+                }
+               
+        }    
+
+    public static void Ejer9()
+        {
+         Scanner leer = new Scanner(System.in);   
+             System.out.println("Introduce n:");
+        int n = leer.nextInt();  
+                     System.out.println("Introduce m");
+        int m = leer.nextInt();  
+        int [] maximo = new int [2];
+                int [][] matriz = new int [n+1][m+1];
+                Random rnd = new Random();
+                for (int i=0;i<n;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<m;j++)
+                    {                
+                        matriz[i][j] =(int)(rnd.nextDouble()*10); 
+                        matriz [n][j]=matriz [n][j]+matriz[i][j];
+                        System.out.print(matriz[i][j]+"  ");
+                          if (matriz[n][j]>maximo[0])
+                        {
+                            maximo[0]=matriz[n][j];
+                            maximo[1]=j+1;
+                        }
+                        
+                                
+                    }
+                }
+            System.out.println("La columna: "+maximo[1]+" es la que suma mas con: "+maximo[0]);     
+             
+        }    
+
      
      
 }
