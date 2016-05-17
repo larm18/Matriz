@@ -148,5 +148,41 @@ public class SanchezBravoFer {
     
     }
     
+    public static void Ejercicio5()
+    {
+       int [][] matriz1 = new int[5][5];
+       int [][] matriz2 = new int[5][5];
+       
+       int resultado=1;
+       int multi;
+     
+       
+       for(int x=0; x < matriz1.length; x++) 
+       {
+         for (int y=0; y < matriz1[x].length; y++)
+         {
+            matriz1[x][y] = (int) (Math.random()*9+1);
+ 
+          }
+       }
+       
+       
+         
+          for(int x=0; x < matriz2.length; x++) 
+       {
+         for (int y=0; y < matriz2[x].length; y++)
+         {
+            matriz2[x][y] = (int) (Math.random()*9+1);
+ 
+          }
+       }
+         
+         int [][] matriz3 = new int[5][5];
+         
+         
+           
+       
+       }
+    }
     
-}
+    
