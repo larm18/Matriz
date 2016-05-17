@@ -152,6 +152,7 @@ public class SanchezBravoFer {
     {
        int [][] matriz1 = new int[5][5];
        int [][] matriz2 = new int[5][5];
+       int [][] matriz3 = new int[5][5];
        
        int resultado=1;
        int multi;
@@ -163,25 +164,36 @@ public class SanchezBravoFer {
          {
             matriz1[x][y] = (int) (Math.random()*9+1);
  
-          }
-       }
+          
+       
        
        
          
-          for(int x=0; x < matriz2.length; x++) 
+          for(int z=0; z < matriz2.length; z++) 
        {
-         for (int y=0; y < matriz2[x].length; y++)
+         for (int w=0; w < matriz2[w].length; w++)
          {
-            matriz2[x][y] = (int) (Math.random()*9+1);
+            matriz2[z][w] = (int) (Math.random()*9+1);
  
           }
        }
-         
-         int [][] matriz3 = new int[5][5];
+          
+          for (int i = 0; i < matriz1[0].length; i++) 
+          {  
+                multi=1;  
+                for (int j = 0; j < matriz1.length; j++)
+                {  
+                  multi=matriz1[x][y]*matriz2[i][j];  
+                }  
+                System.out.println(multi);  
+            }  
+         }
+       }
+           
          
          
            
-       
+   
        }
     }
     
