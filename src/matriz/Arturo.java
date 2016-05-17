@@ -12,9 +12,10 @@ import java.util.Scanner;
  *
  * @author devilwall
  */
-public class Arturo {
+public class Arturo 
+{
     
-    public static void VectorRandom()
+    public static void Ejer1()
     {
         
         Scanner leer = new Scanner(System.in);
@@ -47,7 +48,7 @@ public class Arturo {
         }   
         
     }
-    public static void AlumnosCalificaciones()
+    public static void Ejer2()
     {
                 int [] cali = new int [10];
                 Random rnd = new Random();
@@ -76,4 +77,28 @@ public class Arturo {
               System.out.println("Y se fueron a extra ordinaro "+extra+" alumnos.");    
                 
     }
+    public static void Ejer3()
+        {
+                int [][] matriz = new int [5][5];
+                Random rnd = new Random();
+                int suma = 0;
+                int [] cordenada = new int [2];
+                for (int i=0;i<5;i++)
+                {
+                    System.out.println(""); 
+                    for (int j=0;j<5;j++)
+                    {                
+                        matriz[i][j] =(int)(rnd.nextDouble()*10); 
+                        System.out.print(matriz[i][j]+" "); 
+                            if (suma<=70)
+                            {
+                                suma=suma+matriz[i][j];
+                                cordenada [0]=i+1;
+                                cordenada [1]=j+1;    
+                                }
+                    }
+                }
+                System.out.println("("+cordenada[0]+","+cordenada[1]+") la suma es:"+suma); 
+        }
+                
 }
