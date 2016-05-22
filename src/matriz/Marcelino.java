@@ -263,6 +263,7 @@ public class Marcelino {
                
                System.out.print(Matriz[i][j]);
             }       
+            System.out.println();
         }
         
         System.out.println("El numero mayor es: " + mayor + " (" + posicionN + "," + posicionM + ")");
@@ -286,6 +287,7 @@ public class Marcelino {
                 Matriz[i][j] = llenar;
                System.out.print(Matriz[i][j]);
             }
+            System.out.println();
         }
         
         System.out.println("");
@@ -294,6 +296,7 @@ public class Marcelino {
                 for (int j = 0; j < n; j++) {
                 System.out.print(Matriz[j][i]);
                 }
+                System.out.println();
             }
             
     }

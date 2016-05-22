@@ -25,7 +25,7 @@ public class Eric {
         matrisrandom();
         imprencionmatris();
         matris8();
-        matrisgrande();
+        // matrisgrande(); Error
     }
     public static String datos(){
         out.println("dame el numero");

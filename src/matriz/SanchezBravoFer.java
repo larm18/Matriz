@@ -37,7 +37,7 @@ public class SanchezBravoFer {
         if (rnd % 2 == 0)
         {
             for (int j = 0; j < rnd; j++) {
-               suma+= suma + array[j]; 
+                suma+= suma + array[j]; 
                out.println(suma);
             }
         
@@ -189,11 +189,7 @@ public class SanchezBravoFer {
             }  
          }
        }
-           
-         
-         
-           
-   
+                  
        }
     }
     

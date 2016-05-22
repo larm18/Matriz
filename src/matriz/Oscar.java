@@ -155,17 +155,17 @@ public class Oscar {
     public static void seis(){
         Random num = new Random();
         
-        int [][] m1 = new int[4][5];
+        int [][] m1 = new int[8][3];
         String cor = "";
         int mayor = 0;
         
-        for(int i = 0; i < 4; i++){
-            for(int j=0; j < 5;j++){
+        for(int i = 0; i < 8; i++){
+            for(int j=0; j < 3;j++){
                 m1 [i][j] = num.nextInt(9)+1;
             }
         }
-        for(int i = 0; i < 4; i++){
-            for(int j=0; j < 5;j++){
+        for(int i = 0; i < 8; i++){
+            for(int j=0; j < 3;j++){
                 if(m1[i][j] > mayor){
                     mayor = m1[i][j];
                     cor = ("coordenadas ("+i+","+j+")");

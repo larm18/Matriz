@@ -21,44 +21,82 @@ public class Matriz {
         
         System.out.println("Ejercicios Matriz");
         
+        
+        /*
         System.out.println("Eric :");
-        System.out.println("Ejercicio 1 y 2:");
         Eric e1 = new Eric();
-        leer.next();
+        // 7 Ejercicios Correctos
+        */
         
+        
+        /*
         System.out.println("Fernando :");
-        System.out.println("Ejercicio 1:");
-        System.out.println("Ejercicio 2:");
+        SanchezBravoFer f1 = new SanchezBravoFer();
+        f1.Ejercicio1();
+        f1.Ejercicio2();
+        f1.Ejercicio3();
+        f1.Ejercicio4();
+        //f1.Ejercicio5(); Error
+        // 2 EJercicios Correctos
+        */
         
+        
+        /*
         System.out.println("Arturo :");
-        System.out.println("Ejercicio 1:");
         Arturo a1 = new Arturo();
-        a1.VectorRandom();
-        System.out.println("Ejercicio 2:");
-        a1.AlumnosCalificaciones();
-        leer.next();
+        a1.Ejer1();
+        a1.Ejer2();
+        a1.Ejer3();
+        a1.Ejer4();
+        a1.Ejer5();
+        a1.Ejer6();
+        a1.Ejer7();
+        a1.Ejer8();
+        a1.Ejer9();
+        // 8 Ejercicios Correctos
+        */
         
+        
+        /*
         System.out.println("Carlos :");
-        System.out.println("Ejercicio 1:");
-        System.out.println("Ejercicio 2:");
+        // Ejercicios Copiados
+        */        
         
+        
+        /*
         System.out.println("Marcelino :");
-        System.out.println("Ejercicio 1: ");
         Marcelino m1 = new Marcelino();
         m1.Ejercicio1();
-        System.out.println("Ejercicio 2:");
         m1.Ejercicio2();
-        leer.next();
+        m1.Ejercicio3();
+        m1.Ejercicio4();
+        //m1.Ejercicio5(); Error
+        m1.Ejercicio6();
+        m1.Ejercicio7();
+        m1.Ejercicio8();
+        m1.Ejercicio9();
+        // 7 Ejercicios Correctos
+        */
         
+        
+        /*
         System.out.println("Oscar :");
-        System.out.println("Ejercicio 1:");
         System.out.println("Ingresa un numero Entero N");
         int n = leer.nextInt();
         Oscar o1 = new Oscar();
         int res = o1.uno(n);
         System.out.println(res);
-        System.out.println("Ejercicio 2:");
         o1.dos();
+        o1.tres();
+        System.out.println("Ingresa un numero Entero N");
+        n = leer.nextInt();
+        System.out.println("Ingresa un numero Entero M");
+        int m = leer.nextInt();
+        o1.cinco(n, m);
+        o1.seis();
+        o1.siete();
+        // 5 Ejercicios Correctos 
+        */
     }
     
 }
